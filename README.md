@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🚗 AI Driver Monitoring Dashboard
 
 An AI-powered Driver Monitoring System that detects unsafe driving behavior in real time using Computer Vision and Deep Learning. The system analyzes webcam, dashcam, or recorded video feeds to monitor driver safety and displays live analytics on a web dashboard.
@@ -406,3 +407,7 @@ Built using Full Stack Development + Artificial Intelligence + Computer Vision.
 # 📜 License
 
 This project is developed for educational and portfolio purposes.
+=======
+# AI_Driver_Monitoring_System
+This project is for driver safety
+>>>>>>> a615d3a1bca1e7d0939807dd748fa09d3d19d014
