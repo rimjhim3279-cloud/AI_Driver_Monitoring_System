@@ -4,7 +4,7 @@ import helmet from "helmet";
 import morgan from "morgan";
 import notFound from "./middleware/notFound.js";
 import errorHandler from "./middleware/errorHandler.js";
-
+import authRoutes from "./routes/auth.routes.js";
 import healthRoutes from "./routes/health.routes.js";
 
 const app = express();
@@ -19,8 +19,19 @@ app.use(express.json());
 
 app.use("/api/health", healthRoutes);
 
+app.use("/api/auth", authRoutes);
+
+app.get("/", (req, res) => {
+  res.json({
+    success: true,
+    message: "AI Driver Monitoring Backend Running",
+  });
+});
+
 app.use(notFound);
 
 app.use(errorHandler);
+
+
 
 export default app;
